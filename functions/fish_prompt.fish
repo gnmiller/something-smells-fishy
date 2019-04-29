@@ -13,7 +13,7 @@ function fish_prompt
 	__sf_util_set_default SPACEFISH_PROMPT_SUFFIXES_SHOW true
 	__sf_util_set_default SPACEFISH_PROMPT_DEFAULT_PREFIX "via "
 	__sf_util_set_default SPACEFISH_PROMPT_DEFAULT_SUFFIX " "
-	__sf_util_set_default SPACEFISH_PROMPT_ORDER time user dir host git package node ruby golang php rust haskell julia docker aws venv conda pyenv dotnet kubecontext exec_time line_sep battery vi_mode jobs exit_code char
+    __sf_util_set_default set SPACEFISH_PROMPT_ORDER time user host dir git package node docker ruby golang php rust haskell julia aws conda pyenv kubecontext line_sep battery jobs exit_code char
 
 	# ------------------------------------------------------------------------------
 	# Sections
@@ -21,6 +21,18 @@ function fish_prompt
 
 	# Keep track of whether the prompt has already been opened
 	set -g sf_prompt_opened $SPACEFISH_PROMPT_FIRST_PREFIX_SHOW
+
+    set -g SPACEFISH_HOST_SHOW always
+    set -g SPACEFISH_DIR_SHOW always
+    set -g SPACEFISH_TIME_SHOW always
+    set -g SPACEFISH_USER_SHOW always
+    set -g SPACEFISH_PROMPT_PREFIXES_SHOW false
+    set -g SPACEFISH_DIR_TRUNC_REPO false
+    set -g SPACEFISH_DIR_TRUNC 5
+    set -g SPACEFISH_HOST_COLOR_SSH green
+    set -g SPACEFISH_HOST_COLOR red
+    set -g SPACEFISH_USER_COLOR purple
+    set -g SPACEFISH_PROMPT_ORDER time user host dir git package node docker ruby golang php rust haskell julia aws conda pyenv kubecontext line_sep battery jobs exit_code char
 
 	if test "$SPACEFISH_PROMPT_ADD_NEWLINE" = "true"
 		echo
