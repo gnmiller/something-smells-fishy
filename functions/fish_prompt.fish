@@ -27,8 +27,8 @@ function fish_prompt
     set -g SPACEFISH_TIME_SHOW always
     set -g SPACEFISH_USER_SHOW always
     set -g SPACEFISH_PROMPT_PREFIXES_SHOW false
-    set -g SPACEFISH_DIR_TRUNC_REPO false
-    set -g SPACEFISH_DIR_TRUNC 5
+    set -g SPACEFISH_DIR_TRUNC_REPO true
+    set -g SPACEFISH_DIR_TRUNC 2
     set -g SPACEFISH_HOST_COLOR_SSH green
     set -g SPACEFISH_HOST_COLOR red
     set -g SPACEFISH_USER_COLOR purple
