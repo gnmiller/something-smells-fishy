@@ -32,7 +32,7 @@ function fish_prompt
     set -g SPACEFISH_HOST_COLOR_SSH green
     set -g SPACEFISH_HOST_COLOR red
     set -g SPACEFISH_USER_COLOR purple
-    set -g SPACEFISH_PROMPT_ORDER time user host dir git package node docker ruby golang rust haskell julia aws conda pyenv kubecontext line_sep battery jobs exit_code char
+    set -g SPACEFISH_PROMPT_ORDER time user host dir spotify git package node docker ruby golang rust haskell julia aws conda pyenv kubecontext line_sep battery jobs exit_code char
 
 	if test "$SPACEFISH_PROMPT_ADD_NEWLINE" = "true"
 		echo
