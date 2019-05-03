@@ -13,7 +13,7 @@ function fish_prompt
 	__sf_util_set_default SPACEFISH_PROMPT_SUFFIXES_SHOW true
 	__sf_util_set_default SPACEFISH_PROMPT_DEFAULT_PREFIX "via "
 	__sf_util_set_default SPACEFISH_PROMPT_DEFAULT_SUFFIX " "
-    __sf_util_set_default set SPACEFISH_PROMPT_ORDER time user host dir git package node docker ruby golang php rust haskell julia aws conda pyenv kubecontext line_sep battery jobs exit_code char
+    __sf_util_set_default set SPACEFISH_PROMPT_ORDER time user host spotify dir git package node docker ruby golang php rust haskell julia aws conda pyenv kubecontext line_sep battery jobs exit_code char
 
 	# ------------------------------------------------------------------------------
 	# Sections
@@ -32,7 +32,7 @@ function fish_prompt
     set -g SPACEFISH_HOST_COLOR_SSH green
     set -g SPACEFISH_HOST_COLOR red
     set -g SPACEFISH_USER_COLOR purple
-    set -g SPACEFISH_PROMPT_ORDER time user host dir spotify git package node docker ruby golang rust haskell julia aws conda pyenv kubecontext line_sep battery jobs exit_code char
+    set -g SPACEFISH_PROMPT_ORDER time user host spotify dir git package node docker ruby golang rust haskell julia aws conda pyenv kubecontext line_sep battery jobs exit_code char
 
 	if test "$SPACEFISH_PROMPT_ADD_NEWLINE" = "true"
 		echo
